@@ -8,6 +8,193 @@ html(lang="en")
     link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet")
     title Crappo
   body
-    
+    .offer-section
+      .container
+        header.header
+          .logo-title
+            img(src="./assets/img/logo.svg")
+            span Crappo
+          nav.header-menu
+            ul
+              li
+                a(href="#") Products
+              li
+                a(href="#") Features
+              li
+                a(href="#") About
+              li
+                a(href="#") Contact
+          .signup
+            .login-block
+              .login-block__btn Login
+            .signup-divider
+            .register-block
+              button.prim-button Register
+        .hero
+          .hero-main
+            .discount-block
+              .reduction 75% save
+              p.discount-block__subtitle For the Black Friday weekend
+            h1.hero-main__title Fastest & secure platform to invest in crypto
+            p.hero-main__subdescription Buy and sell cryptocurrencies, trusted by 10M wallets with over $30 billion in transactions.
+            .hero-main__button
+              button.prim-button.prim-button-icon 
+                span Try for FREE
+                img(src="./assets/img/arrow.svg")
+          .hero-bigimage
+            img(src="./assets/img/herobigimage.svg")
+    .advantages-section
+      .container
+        .advantages-list
+          .advantages-item
+            .advantages-item__circle
+              include ../includes/svg/adv1.svg
+            h4.advantages-item__title $30B
+            p.advantages-item__subtitle Digital Currency Exchanged
+          .advantages-item
+            .advantages-item__circle
+              include ../includes/svg/adv2.svg
+            h4.advantages-item__title 10M+
+            p.advantages-item__subtitle Trusted Wallets Investor
+          .advantages-item
+            .advantages-item__circle
+              include ../includes/svg/adv3.svg
+            h4.advantages-item__title 195
+            p.advantages-item__subtitle Countries Supported
+        .advantages-main
+          .advantages-main__image
+            img(src="./assets/img/advbigimage.svg")
+          .advantages-main__text
+            h2 Why you should choose CRAPPO
+            p Experience the next generation cryptocurrency platform. No financial borders, extra fees, and fake reviews.
+            button.prim-button Learn more
+    .calculator-section
+      .container 
+        h2.calculator-title Check how much you can earn
+        h4.calculator-subtitle Let’s check your hash rate to see how much you will earn today, Exercitation veniam consequat sunt nostrud amet.
+        .calculator-block
+          .calculator-inputs
+            input#hash_rate(type="number", name="", placeholde="Enter your hash rate")       
+            .calculator-dropdown
+            button.calculator-button.prim-button Calculate
+          .calculator-summaries
+            p.calculator-summaries-title Estimated 24 hour revenue:
+            .calculator-summaries-sum
+              span.calculator-summaries-sum-eth 0.055 130 59 ETH 
+              span.calculator-summaries-sum-usd ($1275)
+            p.calculator-summaries-subtitle Revenue will change based on mining difficulty and Ethereum price.
+    .market-section
+      .container
+        h2.market-title Trade securely and market the high growth cryptocurrencies.
+        .market-cryptoes-list
+          .market-cryptoes-item
+            .market-cryptoes-item-image
+              include ../includes/svg/crypt1.svg
+            .market-cryptoes-item-title 
+              h4 Bitcoin
+              span BTC
+            p.market-cryptoes-item-desc Digital currency in which a record of transactions is maintained.
+            button.market-cryptoes-item-action.prim-button.prim-button-icon Start mining
+
+          .market-cryptoes-item
+            .market-cryptoes-item-image
+              include ../includes/svg/crypt2.svg
+            .market-cryptoes-item-title 
+              h4 Bitcoin
+              span ETH
+            p.market-cryptoes-item-desc Blockchain technology to create and run decentralized digital applications.
+            button.market-cryptoes-item-action.prim-button.prim-button-icon Start mining
+
+          .market-cryptoes-item
+            .market-cryptoes-item-image
+              include ../includes/svg/crypt3.svg
+            .market-cryptoes-item-title 
+              h4 Bitcoin
+              span LTC
+            p.market-cryptoes-item-desc Cryptocurrency that enables instant payments to anyone in the world.
+            button.market-cryptoes-item-action.prim-button.prim-button-icon Start mining
+    .charts-section
+      .container
+        h2.charts-title Market sentiments, portfolio, and run the infrastructure of your choice
+        .charts-blocks
+          .charts-block
+            .charts-block--text
+              h3 Invest Smart
+              p Get full statistic information about the behaviour of buyers and sellers will help you to make the decision. 
+              button.prim-button Learn more
+            .charts-block--image
+              img(src="./assets/img/chart1.png")
+          .charts-block
+            .charts-block--text
+              h3 Detailed Statistics
+              p View all mining related information in realtime, at any point at any location and decide which polls you want to mine in.
+              button.prim-button Learn more
+            .charts-block--image
+              img(src="./assets/img/chart2.png")
+          .charts-block
+            .charts-block--text
+              h3 Grow your profit and track your investments
+              p Use advanced analytical tools. Clear TradingView charts let you track current and historical profit investments.
+              button.prim-button Learn more
+            .charts-block--image
+              img(src="./assets/img/chart3.png")
+    .form-section
+      .container
+        .form-block
+          .form-block-text
+            h3 Start mining now
+            p Join now with CRAPPO to get the latest news and start mining now
+          form.form-block-inputs
+            input#form_text_input(type="text", name="", placeholder="Enter your email") 
+            button.prim-button.form-button Subscribe
+    footer.footer-section
+      .container
+        .footer-top
+          .footer-logo
+            .logo-title
+              img(src="./assets/img/logo.svg")
+              span Crappo
+          .footer-menu
+            h4 Quick link
+            nav.footer-nav
+              ul
+                li Home
+                li Products
+                li About
+                li Features
+                li Contact
+          .footer-menu
+            h4 Resources
+            nav.footer-nav
+              ul
+                li Download Whitepaper
+                li Smart Token
+                li Blockchain Explorer
+                li Qrypto API
+                li Interest
+          .footer-payments
+            h4 We accept following payment systems
+            .footer-payments-items
+              .footer-payments-item
+                include ../includes/svg/pay1.svg
+              .footer-payments-item
+                include ../includes/svg/pay2.svg
+              .footer-payments-item
+                include ../includes/svg/pay3.svg
+        .footer-bottom
+          p ©2021 CRAPPO. All rights reserved
+          ul.footer-social
+            li.footer-social-item
+              img(src="./assets/img/facebook.svg")
+            li.footer-social-item
+              img(src="./assets/img/inst.svg")
+            li.footer-social-item
+              img(src="./assets/img/youtube.svg")
+            li.footer-social-item
+              img(src="./assets/img/twitter.svg")
+            li.footer-social-item
+              img(src="./assets/img/linkedin.svg")
+
+      
     script(src="./js/main.js") 
     link(rel="stylesheet", href="./css/async.css", property="stylesheet")
