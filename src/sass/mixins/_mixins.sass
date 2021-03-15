@@ -1,0 +1,19 @@
+@mixin r($width)
+  @media only screen and (max-width: $width+ "px")
+    @content
+//  usage: +r(x px) where x is screen width, so screen width below this 'x' px will apply
+
+@mixin rmin($width)
+  @media only screen and (min-width: $width+ "px")
+    @content
+//  usage: +rmin(x px) where x is screen width, so screen width above this 'x' px will apply
+
+@mixin font($alias, $name)
+  @font-face
+    font-family: $alias
+    src: url("../fonts/" + $name + ".woff2") format("woff2"), url("../fonts/" + $name + ".woff") format("woff")
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+// to use:
+//+font(black, cytiapro-black-webfont)
